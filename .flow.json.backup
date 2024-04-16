@@ -55,7 +55,7 @@
         "z": "3e5f4292765aba09",
         "parameters": [],
         "name": "function 1",
-        "func": "console.log(\"test\")\nconsole.log(msg);\nreturn msg;",
+        "func": "console.log(\"test\")\nconsole.log(msg);\nconsole.log(msg);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
