@@ -1,1 +1,105 @@
-[]
+[
+    {
+        "id": "e33afadfb1b96167",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a1bc637d53d46ccf",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": [],
+        "new": true
+    },
+    {
+        "id": "b4f66e3ec7e911e2",
+        "type": "inject",
+        "z": "e33afadfb1b96167",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "35cb1c253859ebb9"
+            ]
+        ]
+    },
+    {
+        "id": "1376d78e9f3deaa2",
+        "type": "debug",
+        "z": "e33afadfb1b96167",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "35cb1c253859ebb9",
+        "type": "function",
+        "z": "e33afadfb1b96167",
+        "parameters": [],
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "1376d78e9f3deaa2"
+            ]
+        ]
+    },
+    {
+        "id": "88d40d5ef9cc59ab",
+        "type": "csv",
+        "z": "a1bc637d53d46ccf",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 690,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    }
+]
