@@ -8,6 +8,33 @@
     "env": []
   },
   {
+    "id": "87ef14ee1e5f4a0b",
+    "type": "inject",
+    "z": "a1bc637d53d46ccf",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 500,
+    "y": 260,
+    "wires": [
+      []
+    ]
+  },
+  {
     "id": "88d40d5ef9cc59ab",
     "type": "csv",
     "z": "a1bc637d53d46ccf",
